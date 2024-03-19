@@ -1,0 +1,26 @@
+{
+  "canisters": {
+    "PreApp_backend": {
+      "main": "src/PreApp_backend/main.mo",
+      "type": "motoko"
+    },
+    "PreApp_frontend": {
+      "dependencies": [
+        "PreApp_backend"
+      ],
+      "source": [
+        "src/PreApp_frontend/dist"
+      ],
+      "type": "assets",
+      "workspace": "PreApp_frontend"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
